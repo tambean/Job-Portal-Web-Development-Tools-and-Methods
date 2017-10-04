@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/aniket</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Royal9563</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.myneu.pojo.UserAccount" />
+		<mapping class="com.myneu.pojo.Candidate" />
+		<mapping class="com.myneu.pojo.Employer" />
+		<mapping class="com.myneu.pojo.Education" />
+		<mapping class="com.myneu.pojo.Experience" />
+		<mapping class="com.myneu.pojo.Jobs" />
+		<mapping class="com.myneu.pojo.ProcessApplications" />
+	</session-factory>
+</hibernate-configuration>
